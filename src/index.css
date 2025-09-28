@@ -1,0 +1,73 @@
+@import "tailwindcss";
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* Tema Alam & Ramah Lingkungan */
+  --golden-brown: #c08b2f;
+  --green-leaf: #2e7d32;
+  --clean-white: #f9f9f9;
+  --earth-brown: #5d4037;
+
+  color-scheme: light;
+  color: var(--earth-brown);
+  background-color: var(--clean-white);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: var(--green-leaf);
+  text-decoration: inherit;
+}
+a:hover {
+  color: var(--golden-brown);
+}
+
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--green-leaf);
+  color: var(--clean-white);
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+button:hover {
+  background-color: var(--golden-brown);
+  border-color: var(--golden-brown);
+}
+button:focus,
+button:focus-visible {
+  outline: 2px solid var(--golden-brown);
+  outline-offset: 2px;
+}
+
+/* Media query untuk konsistensi tema */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: var(--earth-brown);
+    background-color: var(--clean-white);
+  }
+  a:hover {
+    color: var(--golden-brown);
+  }
+  button {
+    background-color: var(--green-leaf);
+    color: var(--clean-white);
+  }
+}
