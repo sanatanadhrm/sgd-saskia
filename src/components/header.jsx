@@ -17,7 +17,7 @@ const Header = () => {
           </div> */}
           <img src={logo} alt="Logo" className="w-15 h-15 object-contain" />
           <span className="text-xl font-bold" style={{ color: "#c08b2f" }}>
-            Responsible Consumption and Production
+            Responsible Consumption
           </span>
         </div>
 
