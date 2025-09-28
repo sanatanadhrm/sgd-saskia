@@ -1,5 +1,6 @@
 // components/MateriSection.js
 import React from "react";
+import logo_2 from "../assets/logo-2.jpg";
 
 const MateriSection = () => {
   const materiList = [
@@ -47,6 +48,11 @@ const MateriSection = () => {
       style={{ backgroundColor: "#f9f9f9" }}
     >
       <div className="container mx-auto px-4">
+        <img
+          src={logo_2}
+          alt="Logo 2"
+          className="w-[50%] h-[50%] object-contain mx-auto mb-8"
+        />
         <div className="text-center mb-16">
           <h2
             className="text-3xl md:text-4xl font-bold mb-4"
